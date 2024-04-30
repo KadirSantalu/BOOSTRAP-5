@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12">
+            <div aria-label="Açılır Buton Grubu" class="btn-group" role="group">
+                <button class="btn btn-success" type="button">Bir</button>
+                <button class="btn btn-success" type="button">İki</button>
+                <div class="btn-group" role="group">
+                    <button id="myDropdown" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Açılır Buton</button>
+                    <ul class="dropdown-menu" aria-labelledby="myDropdown">
+                        <li><a href="#" class="dropdown-item">Anasayfa</a></li>
+                        <li><a href="#" class="dropdown-item">Hakkımızda</a></li>
+                        <li><a href="#" class="dropdown-item">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
