@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container my-5">
+    <div class="row row-cols-4 mb-5">
+        <div class="col">
+            <button class="btn btn-success" data-bs-placement="top" data-bs-toggle="tooltip" title="Kadir SANTALU"
+                    type="button">
+                Yukarı Tooltip
+            </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-success" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Kadir SANTALU"
+                    type="button">
+                Aşağı Tooltip
+            </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-success" data-bs-placement="right" data-bs-toggle="tooltip" title="Kadir SANTALU"
+                    type="button">
+                Sağ Tooltip
+            </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-success" data-bs-placement="left" data-bs-toggle="tooltip" title="Kadir SANTALU"
+                    type="button">
+                Sol Tooltip
+            </button>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <h1>HTML ile Tooltip</h1>
+        <div class="col">
+            <button class="btn btn-secondary" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-html="true" title="<strong>Fehmi Uyar</strong> <u>ile</u> <em>bootstrap</em>" type="button">
+                HTML ile Tooltip
+            </button>
+        </div>
+
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    var toolsList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList=toolsList.map(function(x){
+        return new bootstrap.Tooltip(x);
+    })
+</script>
+</body>
+</html>

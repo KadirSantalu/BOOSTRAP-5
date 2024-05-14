@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container my-5">
+    <div class="row row-cols-4 py-5">
+        <div class="col">
+            <button class="btn btn-dark" data-bs-content="Üstte Açılan Popover" data-bs-placement="top"
+                    data-bs-toggle="popover" type="button">Top
+            </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" data-bs-content="Altta Açılan Popover" data-bs-placement="bottom"
+                    data-bs-toggle="popover" type="button">Bottom
+            </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" data-bs-content="Solda Açılan Popover" data-bs-placement="left"
+                    data-bs-toggle="popover" type="button">Left
+            </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" data-bs-content="Sağda Açılan Popover" data-bs-placement="right"
+                    data-bs-toggle="popover" type="button">Right
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    var List = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var PopovertipList = List.map(function (x) {
+        return new bootstrap.Popover(x, {
+            container: 'body'
+        });
+    })
+</script>
+
+
+</body>
+</html>
