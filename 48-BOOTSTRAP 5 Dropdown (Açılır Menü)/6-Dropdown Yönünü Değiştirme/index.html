@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container my-5">
+    <div class="row row-cols-2">
+        <div class="col">
+            <h1 class="text-muted mb-5">Dropup Button</h1>
+            <div class="btn-group dropup mt-5">
+                <button class="btn btn-success">Dropdown Buton</button>
+                <button aria-expanded="false" class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"
+                        id="dropBtn" type="button">
+                </button>
+                <div class="dropdown">
+                    <ul aria-labelledby="dropBtn" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">First Link</a></li>
+                        <li><a class="dropdown-item" href="#">Second Link</a></li>
+                        <li><a class="dropdown-item" href="#">Third Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

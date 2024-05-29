@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container my-5">
+    <div class="row row-cols-2">
+        <div class="col">
+            <h1>Normal Görünüm</h1>
+            <div class="btn-group">
+                <button aria-expanded="false" class="btn btn-success dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        id="dropBtn1" type="button">Normal Menü Görünüm Dropdown Buton
+                </button>
+                <div class="dropdown">
+                    <ul aria-labelledby="dropBtn1" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">First Link</a></li>
+                        <li><a class="dropdown-item" href="#">Second Link</a></li>
+                        <li><a class="dropdown-item" href="#">Third Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h1>Sağa Yaslanan Menü Görünüm</h1>
+            <div class="btn-group">
+                <button aria-expanded="false" class="btn btn-success dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        id="dropBtn2" type="button">Sağa Yaslanan Menü Görünüm Dropdown Buton
+                </button>
+                <div class="dropdown">
+                    <ul aria-labelledby="dropBtn2" class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">First Link</a></li>
+                        <li><a class="dropdown-item" href="#">Second Link</a></li>
+                        <li><a class="dropdown-item" href="#">Third Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
