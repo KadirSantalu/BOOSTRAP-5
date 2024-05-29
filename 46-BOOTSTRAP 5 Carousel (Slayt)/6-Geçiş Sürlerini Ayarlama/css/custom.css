@@ -1,0 +1,12 @@
+.carousel-item {
+    transition: transform 0.6s ease; /* Geçiş efekti için tanımlanan CSS */
+}
+
+.carousel-item.active {
+    transform: translateX(0); /* Aktif olan resmi görünür kılar */
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    transform: translateX(100%); /* Bir sonraki ve bir önceki resmi ekranın sağında gizler */
+}
