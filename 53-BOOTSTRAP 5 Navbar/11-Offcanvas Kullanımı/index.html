@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-xl navbar-light bg-secondary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img alt="logo" class="d-inline-block align-text-top" height="45"
+                                              src="img/logo.png" width="90">Nike</a>
+        <button class="navbar-toggler" data-bs-target="#nContent"
+                data-bs-toggle="offcanvas"
+                type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div aria-labelledby="nLabel" class="offcanvas offcanvas-end" id="nContent" tabindex="-1">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="nLabel">Menüler</h5>
+                <button  class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        type="button"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kurumsal</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                            Çalışmalarımız
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">İlk Çalışma</a></li>
+                            <li><a class="dropdown-item" href="#">İkinci Çalışma</a></li>
+                            <li><a class="dropdown-item" href="#">Üçüncü Çalışma</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dördüncü Çalışma</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" placeholder="Arama yap" type="search">
+                    <button class="btn btn-outline-success" type="button">Ara</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto esse facere laudantium possimus
+            voluptate? Ab, ad debitis, deserunt illo inventore laborum, maiores nisi placeat quos sed veniam vero
+            voluptatem voluptatibus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi praesentium voluptas. Amet
+            consectetur culpa ducimus eos, excepturi explicabo illum ipsa laboriosam minus molestias nihil similique
+            temporibus, tenetur, voluptate voluptatum?
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
