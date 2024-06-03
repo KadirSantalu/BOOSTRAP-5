@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row my-5">
+        <div class="col">
+            <div class="mb-3">
+                <label class="form-label" for="exampleFormControlInput1">Email address</label>
+                <input class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" type="email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-success" id="btnToast" type="button">Kaydet</button>
+            <div class="toast" data-bs-delay="5000" id="myToast1" role="alert">
+                <div class="toast-header">
+                    <strong>Sistem Yanıtı</strong>
+                    <small class="text-muted">1 dakika önce</small>
+                    <button class="btn-close" data-bs-dismiss="toast" type="button"></button>
+                </div>
+                <div class="toast-body">
+                    Email adresi hatalı
+                </div>
+            </div>
+            <div class="toast" data-bs-delay="5000" id="myToast2" role="alert">
+                <div class="toast-header">
+                    <strong>Sistem Yanıtı</strong>
+                    <small class="text-muted">1 dakika önce</small>
+                    <button class="btn-close" data-bs-dismiss="toast" type="button"></button>
+                </div>
+                <div class="toast-body">
+                    Email adresi hatalı
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast m-3 position-fixed top-0 end-0" data-bs-delay="5000" id="myToast" role="alert" style="z-index:11;">
+    <div class="d-flex justify-content-between">
+        <div class="toast-body">
+            Email adresi hatalı
+        </div>
+        <button class="btn-close my-auto me-2" data-bs-dismiss="toast" type="button"></button>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // $(document).ready(function(){
+    //     var toastElement = $('#myToast');
+    //     var toast = new bootstrap.Toast(toastElement);
+    //     toast.show();
+    // });
+</script>
+<script>
+
+    $(document).ready(function () {
+        $('#btnToast').on('click', function () {
+            var toastElement = $('#myToast');
+            var toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        });
+    });
+</script>
+</body>
+</html>
